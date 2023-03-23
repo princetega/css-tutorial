@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 201</title>
+    <style>
+       *{color :pink;}
+       h1{color : red ; text-decoration: underline;}
+       h1,h2,h3 { font-family: Verdana }
+       .header {font-size: 48px}
+       #id1 {word-spacing: 4px; letter-spacing: 6px}
+       #main p { font-style: italic;}
+       #heading > p { font-size: 30px; color: blue; }
+       h2 + p {background-color: black}
+       h3 ~ p {text-transform: uppercase;}
+       a:link {color: red}
+       a:visted {color : purple}
+       a:focus {color :yellow;}
+      /* a:hover { color: black } */
+       a:active { color : lime; }
+      /* a[href] {color: green} */
+       a[href="home.html"] {color: gold}
+       #heading > p:first-of-type::first-letter { font-size: 50px; padding: 30px }
+        #heading > p:last-of-type::first-line { letter-spacing: 20px }
+         #heading > h2:only-of-type { letter-spacing: 40px }
+         #heading > p:nth-of-type(2) { color : white; }
+        #heading p:nth-child(8) {border: 2px solid red;  }
+        #heading a:nth-last-child(3) {border: 2px solid blue;  }
+        :empty {background-color: green;width: 100px; height: 100px}
+        #after {background-color: green;width: 100px; height: 100px}
+        #after::after {content: " ";position: absolute; margin-left: 30px; width: 100px; height: 100px; background-color: red; margin-top: 30px; }
+        #after::before {content: " ";position: absolute; margin-left: 10px; width: 100px; height: 100px; background-color: blue; margin-top: 10px; }
+        #main div:last-child {background-color: black!important}
+        :root { background-color: lime; }
+
+        ::selection {color: black;}
+        #heading:not(p) {border: 4px solid blue};
+
+    </style>
+</head>
+<body>
+<div id="main">
+    <div id="heading">
+    <h1>Css selector Type</h1>
+    <p>First Child </p>
+    <h2>Type Selector </h2>
+    <p> Child selector</p>
+    <h3>Another Type selector</h3>
+    <p> Child selector</p>
+    <a href="home.html">Home</a>
+    <p>hub hgd hfdhfd hjdfjjfdhj hfdjdhj hjfdjhfdhj hjdhjfdhj hjdhjd hdhjd hj hub hgd hfdhfd hjdfjjfdhj hfdjdhj hjfdjhfdhj hjdhjfdhj hjdhjd hdhjd hj
+    hub hgd hfdhfd hjdfjjfdhj hfdjdhj hjfdjhfdhj hjdhjfdhj hjdhjd hdhjd hj
+hub hgd hfdhfd hjdfjjfdhj hfdjdhj hjfdjhfdhj hjdhjfdhj hjdhjd hdhjd hj</p>
+hub hgd hfdhfd hjdfjjfdhj hfdjdhj hjfdjhfdhj hjdhjfdhj hjdhjd hdhjd hj
+hub hgd hfdhfd hjdfjjfdhj hfdjdhj hjfdjhfdhj hjdhjfdhj hjdhjd hdhjd hj
+hub hgd hfdhfd hjdfjjfdhj hfdjdhj hjfdjhfdhj hjdhjfdhj hjdhjd hdhjd hj
+    <a href="">About</a>
+</div>
+    <h1 class="header">Class Selector</h1>
+    <h2 id="id1">ID Selector </h2>
+    <p>Another child</p>
+    <div></div>
+    <div id="after"></div>
+</div>
+
+
+
+</body>
+</html>

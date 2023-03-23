@@ -1,0 +1,71 @@
+
+		*{margin: 0;
+			padding: 0;
+			box-sizing: border-box;}
+			
+			a{text-decoration: none;}
+			p{borer:2px solid red;}
+		#header{
+			
+			background: url(images/bg.png) right top  no-repeat,  url(images/hero-bg2.png) top left no-repeat;
+			background-clip: border-box;
+			background-size: cover;
+			height: 50vh;
+			width: 100%;
+			position: relative;
+		}
+		#nav{
+			height: 60px;
+			background: black;
+			padding: 10px;
+		}
+		.container{
+			width: 90%;
+			overflow: auto;
+			margin: 0 auto;
+		}
+		nav{margin-top: 10px;}
+		nav a{
+			display: inline-block;
+			color:white;
+		   
+		     margin-left: 10px;
+		   }
+		   #logo{
+			float: left;
+		}
+		#logo img{
+		 width: 40px;
+		 height: 40px;
+		      }
+		#logos{
+			margin-bottom: 10px;
+		}
+		#logos img{
+		 width: 40px;
+		 height: 40px;
+		      }
+		nav #nav{float: right;
+		}
+		  #header h1{ clear: both; position: absolute; top: 50%; left: 50% ; color: white; transform: translate(-50%, -50%);
+		   font-size: 2em}   
+	img{max-width: 100%}
+	.pad{ padding: 20px 0px;  }
+	#about h2{text-align: center; margin: 0 0 0 10px; padding: 10px}
+	#about p{padding: 10px}
+	#about-text{margin-top: 20px;}
+	#gallary{background-image: linear-gradient(to right, rgb(31,37,126), rgb(119,201,173)); }
+	.gallary{
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
+
+	}
+	.gallary img{
+		border: 2px solid black;
+		border-radius: 10px;
+		width: 100%;
+	}
+	footer{background-image: linear-gradient(to right, rgb(31,37,126), rgb(119,201,173)); }
+	footer nav a {display: block;}

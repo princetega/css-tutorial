@@ -1,0 +1,33 @@
+/*@media screen and (min-width: 480px)  {*/
+	
+	*{margin: 0;
+			padding: 0;
+			box-sizing: border-box;}
+			
+ #header h1{ font-size:3.5em;}
+ #header{
+			
+			background: url(images/bg.png) right top  no-repeat,  url(images/hero-bg2.png) top left no-repeat;
+			
+			background-size: cover;
+			height: 100vh;
+		}
+		#logo img{
+		 width: 60px;
+		 height: 60px;
+		      }
+		  #nav{
+			height: 80px;
+			background: black;
+			padding: 10px;
+		} 
+		nav a{
+			padding: 10px;
+		   } 
+		   nav #nav{float: right;
+		}
+
+		   #about div > div {float: left; width: 45%; margin: 2.5%; }  
+		   footer div > div {float: left; width: 20%; margin: 2.5%; } 
+		   .pad{ padding: 60px 20px;  }
+/*}*/

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Js </title>
+    
+
+</head>
+<body >
+	<div>
+<p id="t" >One</p>
+<p class="beginner" >two</p>
+<p >three</p>
+<p >four</p>
+<p >five</p>
+<p class="beginner">six</p>
+<a href="google.com">Google</a>
+</div>
+<p>Another </p>
+<button id="changebg">Change Image</button>
+<img src="images/bg.png" title="background Image" alt="background image" id="bg">
+
+
+<script type="text/javascript">
+	var id1 = document.getElementById('changebg');
+	var tu = document.getElementsByTagName('p');
+
+	var bg = document.querySelectorAll('img');
+	var altvalue =bg[0].getAttribute("src");
+   //cl[0].outerHTML = "<a href='index.html'>Home</a>";
+   //console.log(cl);
+  tu[2].style.backgroundColor = 'red';
+   console.log(altvalue);
+	//id1.onclick = alertM;
+	//console.log(tu);
+	id1.addEventListener('click', function(e) {
+		//if (altvalue == 'images/bit.png') {  bg[0].setAttribute('src','images/bg.png');}
+
+		if (bg[0].getAttribute("src") == 'images/bg.png') {
+              bg[0].setAttribute('src','images/bit.png');
+              console.log(bg[0].getAttribute("src"));
+		} else{
+          bg[0].setAttribute('src','images/bg.png');
+		}
+		
+	});
+	for (var i = 0; i < tu.length; i++) {
+		//console.log(tu[i]);
+	}
+	var j = true;
+var a = 2;// "2"
+
+var d = [2,5,"6"]; 
+if (true) {
+	console.log(d[2]);//"man" + " woman" manwoman
+} else {
+	console.log("false");
+}
+/*
+for (var i = 0; i <= d.length; i++) {
+console.log(d[i]);
+}
+*/
+ /*
+var MYman = 3;
+if (MYman == 3) {
+	myMan = "My man is blessed";
+    console.log(myMan);
+
+}
+*/
+function alertMe(a,b) {
+	var h = a + b;
+	return h;
+}
+/*
+ var add = alertMe(d[0],d[1]);
+console.log(add * 2);
+ var add1 = alertMe(50,12); // 
+ alert(add1 * 3);
+ var con =confirm("Do you want to delete this page");
+ if (con) {
+ 	alert("deleted")
+ } else {
+ 	alert("nothing")
+ }
+ */
+ //setTimeout(alertM, 5000);
+ var name2 = "Global Name";
+ var name1 ;
+ function alertM() {
+ 	 name1 = "new Name";
+	var name =prompt("What is your name");
+  alert ("welcome" + name+". " + "The time is " + Date());;
+}
+ 
+console.log(name2); 
+console.log(name1);
+document.body.style.backgroundColor = "green";
+
+  
+</script>
+</body>
+</html>
